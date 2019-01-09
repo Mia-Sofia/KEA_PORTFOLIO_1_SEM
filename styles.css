@@ -1,0 +1,484 @@
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+
+img {
+    width: 100%;
+
+}
+
+body {
+    margin: 3px;
+
+}
+
+hr {
+    border: 1px solid #79798b
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.column {
+
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 2rem;
+    margin: 2rem;
+
+
+}
+
+
+/********************  Menu Forsiden  ********************/
+
+/* tekst farve i lille flex */
+nav a:link {
+    color: white;
+}
+
+/* tekst farve i sotr flec*/
+nav a:visited {
+    color: white;
+}
+
+/* mous over link */
+nav a:hover {
+    color: black;
+    background-color: grey;
+}
+
+
+nav a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 725px) {
+
+    nav a {
+        border-left: 1px white solid;
+        border-right: 1px white solid;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        display: inline-block;
+
+
+    }
+
+}
+
+
+
+
+/********************  knapper mit arbejde  ********************/
+
+
+/* tekst farve i lille flex */
+.knap a:link {
+    color: black;
+}
+
+/* tekst farve i sotr flec*/
+.knap a:visited {
+    color: black;
+}
+
+/* mous over link */
+.knap a:hover {
+    color: black;
+    background-color: grey;
+}
+
+
+.knap a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 10px;
+
+}
+
+@media only screen and (min-width: 725px) {
+
+    .knap a {
+        border: solid black 1px;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        text-align: center;
+
+
+
+    }
+
+}
+
+@media only screen and (max-width: 724px) {
+
+    .knap a {
+        border: solid black 1px;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        text-align: center;
+
+
+
+
+    }
+
+}
+
+
+
+/***************************FORSIDE******************************/
+
+.baggrunds_billede {
+    /* baggrunds billedet*/
+    background-image: url("grafik/baggrund/Material_ConneXion.jpg");
+
+
+    /* skærm udfyldningen*/
+    height: 100vh;
+    width: 100vw;
+
+
+    /* uklar effekt */
+    filter: blur(4px);
+
+
+
+    /* centrere billedet */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* positioner teksten i midten af billedet/baggrunden */
+.baggrunds_firkant {
+
+    /* sort men gennemsigtig baggrund */
+    background-color: rgba(0, 0, 0, 0.58);
+    /* tekst farve og position*/
+    color: white;
+    text-align: center;
+    /*    rammen omkring boksen*/
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    /*    position og størrelse på boksen*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+
+
+}
+
+
+
+
+
+
+/**************************  Om Mig  *************************/
+
+
+.baggrunds_billede_om_mig {
+    /* baggrunds billedet*/
+    background-image: url("grafik/baggrund/Material_ConneXion.jpg");
+
+
+    /* skærm udfyldningen*/
+    height: 100vh;
+    width: 100vw;
+
+
+    /* uklar effekt */
+    filter: blur(4px);
+
+
+
+    /* centrere billedet */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#om_mig .sectionwrapper {
+
+    /* sort men gennemsigtig baggrund */
+    background-color: rgba(0, 0, 0, 0.58);
+    /* tekst farve og position*/
+    color: white;
+    text-align: center;
+    /*    rammen omkring boksen*/
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    /*    position og størrelse på boksen*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.om_mig_billede img {
+    border-radius: 50%;
+    border: solid 0.4px black;
+    width: 300px;
+    height: 300px;
+}
+
+
+/***************Mit arbejde************/
+#mit_arbejde .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#mit_arbejde .column {
+    flex-grow: 1;
+    flex-basis: 200px;
+
+    /* child ting*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+    margin: 0.1rem;
+    /*    background: rgb(242, 249, 255);*/
+}
+
+
+
+
+/*************** Toppen af under HTML ************/
+
+.top_billede {
+    /* baggrunds billedet*/
+    background-image: url("grafik/baggrund/Material_ConneXion.jpg");
+
+
+    /* skærm udfyldningen*/
+    height: 35vh;
+    width: 100vw;
+
+
+    /* uklar effekt */
+    filter: blur(2px);
+
+
+
+    /* centrere billedet */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* positioner teksten i midten af billedet/baggrunden */
+.tekst_firkant {
+
+    /* sort men gennemsigtig baggrund */
+    background-color: rgba(0, 0, 0, 0.58);
+    /* tekst farve og position*/
+    color: white;
+    text-align: center;
+    /*    rammen omkring boksen*/
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    /*    position og størrelse på boksen*/
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************JavaScript******************************/
+
+
+
+.hide {
+    display: none;
+}
+
+
+/*computer size slide*/
+
+
+
+#billede1 {
+
+    background-image: url(grafik/js/billede1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    top: 55vw;
+    left: 47.5vw;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vw;
+
+}
+
+#frem1 {
+
+    background-image: url(grafik/js/pil_frem_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 84vw;
+    top: -20vw;
+
+}
+
+#tilbage1 {
+
+    background-image: url(grafik/js/pil_tilabge_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 9vw;
+    top: -29vw;
+}
+
+
+
+
+#billede2 {
+
+    background-image: url(grafik/js/billede2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    top: 55vw;
+    left: 47.5vw;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vw;
+}
+
+#frem2 {
+
+    background-image: url(grafik/js/pil_frem_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 84vw;
+    top: -20vw;
+
+}
+
+#tilbage2 {
+
+    background-image: url(grafik/js/pil_tilabge_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 9vw;
+    top: -29vw;
+}
+
+
+
+#billede3 {
+
+    background-image: url(grafik/js/billede3.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    top: 55vw;
+    left: 47.5vw;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vw;
+
+}
+
+#frem3 {
+
+    background-image: url(grafik/js/pil_frem_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 84vw;
+    top: -20vw;
+
+}
+
+#tilbage3 {
+
+    background-image: url(grafik/js/pil_tilabge_a.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1.8vw;
+    height: 10vw;
+    left: 9vw;
+    top: -29vw;
+}
